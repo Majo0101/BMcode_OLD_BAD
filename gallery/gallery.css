@@ -1,0 +1,158 @@
+.galleryPlate{
+    width: 100%;
+    height: 100vh;
+    z-index: 6;
+    position: fixed;
+    display: flex;
+    background-color: rgba(38,37,37,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+#close{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background: none
+}
+
+#close > img{
+    filter: invert(50%) saturate(614%) brightness(100%) contrast(100%);
+    width: 100%;
+}
+
+#close > img:hover{
+    filter: invert(100%) saturate(614%) brightness(100%) contrast(100%);
+    width: 100%;
+}
+
+#close > img:active{
+    filter: invert(66%) sepia(13%) saturate(1801%) hue-rotate(116deg) brightness(93%) contrast(89%);
+    width: 100%;
+}
+
+#right{
+    height: 100%;
+    width: 50%;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#left{
+    height: 100%;
+    width: 50%;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#right > img{
+    position: absolute;
+    height: 3rem;
+    right: 0;
+    top: 43%;
+    filter: invert(50%) saturate(614%) brightness(100%) contrast(100%);
+}
+
+#left > img{
+    position: absolute;
+    height: 3rem;
+    left: 0;
+    top: 43%;
+    filter: invert(50%) saturate(614%) brightness(100%) contrast(100%);
+}
+
+#right > img:hover{
+    filter: invert(100%) saturate(614%) brightness(100%) contrast(100%);
+}
+
+#left > img:hover{
+    filter: invert(100%) saturate(614%) brightness(100%) contrast(100%);
+}
+
+#right > img:active{
+    filter: invert(66%) sepia(13%) saturate(1801%) hue-rotate(116deg) brightness(93%) contrast(89%);
+}
+
+#left > img:active{
+    filter: invert(66%) sepia(13%) saturate(1801%) hue-rotate(116deg) brightness(93%) contrast(89%);
+}
+
+.photoFrame{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+#photoOne{
+    background-image: url("/gallery/a.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#photoTwo{
+    background-image: url("/gallery/b.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#photoThree{
+    background-image: url("/gallery/c.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#photoFour{
+    background-image: url("/gallery/d.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.clone{
+    width: 0;
+    height: 0;
+    background-color: #3bba9c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.2s ease-out 100ms, width 0.2s ease-out 100ms;
+}
+
+.photoFrame:hover > .clone{
+    height: 90%;
+    width: 90%;
+}
+
+.clone > img{
+    height: 10%;
+    filter: invert(100%)
+}
+
+.photoArea{
+    background-image: url("/gallery/1.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    position: absolute;
+    max-height: 80%;
+    max-width: 80%;
+}
+
+#invisible{
+    visibility: hidden;
+    max-width: 80vw;
+    max-height: 70vh;
+}

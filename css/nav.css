@@ -1,0 +1,152 @@
+.myNav{
+    width: auto;
+    height: 5rem;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    right: 3%;
+    background-color: #5A6161;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    z-index: 4;
+}
+
+.menu{
+    display: none;
+}
+
+.navbar-brand{
+    margin-left: 2rem;
+}
+
+.buttonNavArea{
+    margin-left: auto;
+    margin-right: 2rem;
+    flex-direction: row;
+    display: flex;
+}
+
+.button{
+    font-family: big john, sans-serif;
+    color: white;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
+
+#download{
+    height: 4rem;
+    border: 1px solid #3bba9c;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.button > p{
+    margin-top: 0.1rem;
+}
+
+.button:hover > p{
+    position: relative;
+    overflow: hidden;
+    animation: jump 0.4s linear ;
+    color: #3bba9c;
+}
+
+@keyframes jump {
+    0% {height:  1.5rem;color: white}
+    50% {height: 0; }
+    100% {height: 1.5rem; color: #3bba9c;}
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1280px){
+    .button{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .navbar-brand{
+        margin-left: 1rem;
+    }
+
+    .buttonNavArea{
+        margin-right: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 1536px){
+    .button{
+        margin-right: 1rem;
+    }
+
+    .navbar-brand{
+        margin-left: 4rem;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .myNav{
+        width: auto;
+        height: 4rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border-bottom: 0;
+    }
+
+    .menu{
+        display: inline;
+        margin-left: auto;
+        margin-right: 0.5rem;
+        border: 1px solid white;
+        border-radius: 50px;
+        padding: 0.3rem;
+    }
+    .menu > img{
+        height: 35px;
+        width: auto;
+    }
+
+    .navbar-brand{
+        margin-left: 0.2rem;
+    }
+    .navbar-brand > img{
+        height: 40px;
+        width: auto;
+    }
+
+    .buttonNavArea{
+        position: fixed;
+        margin-right: 0;
+        top: 4rem;
+        width: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        background-color: #5A6161;
+        overflow: scroll;
+        border-top: 1px solid #808080;
+    }
+    .button{
+        padding-left: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #download{
+        height: auto;
+        border: none;
+        border-radius: 0;
+        text-decoration: none;
+    }
+
+}

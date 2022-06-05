@@ -1,0 +1,479 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('http://fonts.cdnfonts.com/css/big-john');
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 40px #3D4849 inset !important;
+}
+
+input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+}
+
+@font-face {
+    font-family: Corbert;
+    src: url(/fonts/Corbert-Regular.otf);
+}
+
+/*-----------------MAIN CONSTRUCTOR-----------------*/
+.photoMain {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-image: url(/img/fotoWeb.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    z-index: 0;
+}
+
+.myName{
+    width: 45vh;
+    height: 40%;
+    background-color: #3D4849;
+    z-index: 2;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    border-radius: 50% 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textMainArea{
+    position: absolute;
+    left: 40%;
+    top: 0;
+    height: auto;
+    flex-direction: column;
+    background-color: black;
+    width: 55%;
+    z-index: 0;
+    display: flex;
+}
+
+.infoBarMain{
+    position: fixed;
+    top: 0;
+    left: 95%;
+    height: 100%;
+    width: 5%;
+    border-left: 1px solid #808080;
+    background-color: #3D4849;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*------------------------------------------------*/
+
+
+/*--------------LOGOS pravy bok----------------------*/
+.infoBarLogos{
+    height: 28%;
+    border: 1px solid grey;
+    width: 70%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 2%;
+
+}
+
+.infoBarLogo{
+    height: 20%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.infoBarLogoSpace{
+    height: 4%;
+}
+
+.linkTo{
+    width: 100%;
+}
+
+.logoInfo{
+    width: 70%;
+    height: auto;
+    filter: invert(50%) sepia(0%) saturate(614%) hue-rotate(156deg) brightness(100%) contrast(89%);
+}
+/*-------------------------------------------------------------------*/
+
+/*---------------- VYMENA PROGRAMMER ELECTRICIAN--------------------*/
+#title {
+    color: #3bba9c;
+    font-family: big john,sans-serif;
+    font-size: 0.6em;
+    margin-left: 5%;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    animation: second 3s ease infinite alternate;
+}
+
+@keyframes second {
+
+    from {
+        max-width: 0;
+    }
+    to {
+        max-width: 11rem;
+    }
+}
+
+.myNameText{
+    font-size: 7vh;
+    font-family: big john , sans-serif;
+    color: white;
+}
+/*-----------------------------------------------------------------*/
+
+/*----------------SEKCIE KONTAINER----------------------------------*/
+.home{
+    z-index: 1;
+    width: 100%;
+    height: 69vh;
+    background-color: #3D4849;
+}
+
+.prolog{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #808080;
+    background-color: #3D4849;
+}
+
+.aboutMe{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #808080;
+    background-color: #3D4849;
+    position: relative;
+}
+
+.experience{
+    z-index: 1;
+    width: 100%;
+    min-height: 65vh;
+    border-top: 1px solid #808080;
+    background-color: #3D4849;
+    position: relative;
+}
+
+.education{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #808080;
+    background-color: #3D4849;
+}
+
+.skills{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #808080;
+    background-color: #3D4849;
+}
+
+.gallery{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #808080;
+    background-color: #3D4849;
+}
+
+.otherSkill{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #808080;
+    background-color: #3D4849;
+    position: relative;
+}
+
+.contact{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #808080;
+    background-color: #3D4849;
+    position: relative;
+}
+
+.copyRight{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #808080;
+    background-color: #3D4849;
+    position: relative;
+}
+/*-------------------------------------------------------------*/
+
+/*-------------------NASTAVENIA POLIA A TEXTY------------------*/
+.titles{
+    color: white;
+    font-family: big john , sans-serif;
+    margin-left: 5%;
+    width: auto;
+    font-size: 5vh;
+    position: relative;
+}
+
+.textField{
+    margin-left: 5%;
+    width: 90%;
+}
+
+.bigJohn{
+    color: white;
+    font-family: big john, sans-serif;
+}
+
+.corBert{
+    color: white;
+    font-family: Corbert, sans-serif;
+}
+/*------------------------------------------------------*/
+
+/*--------------------O mne gombik---------------------*/
+#buttonBouncing{
+    position: relative;
+    animation: example 1s ease infinite alternate;
+}
+
+@keyframes example {
+    from{ top: 5px; }
+    to  { top:-5px; }
+}
+
+#contactMe{
+    background: none;
+    border: 1px solid white;
+    height: 4em;
+    width: 35%;
+    margin-left: 7%;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: big john, sans-serif;
+    color: white;
+}
+
+#buttonDown{
+    border: 1px solid white;
+    height: 4em;
+    width: 20%;
+    color: #3bba9c;
+    border-radius: 50px;
+    background: none;
+    cursor: pointer;
+    font-family: big john, sans-serif;
+    margin-left: 5%
+}
+
+#contactMe:active{
+    border: 1px solid #3bba9c;
+}
+
+#buttonDown:active                          {
+    border: 1px solid #3bba9c;
+}
+/*----------------------------------------------------*/
+
+/*----------------slider gombiky---------------------*/
+.buttonSliderMoveLeft{
+    position: relative;
+    animation: moveLeft 1s ease infinite alternate;
+}
+@keyframes moveLeft {
+    from{ left:-5px; }
+    to  { left: 5px; }
+}
+
+.buttonSliderMoveRight{
+    position: relative;
+    animation: moveRight 1s ease infinite  alternate;
+}
+@keyframes moveRight {
+    from{ left: 5px; }
+    to  { left:-5px; }
+}
+
+/* Button slider */
+.buttonSlider{
+    position: absolute;
+    top: 6vh;
+    right: 6vh;
+    width: auto;
+    height: auto;
+    border: 1px solid #3bba9c;
+    border-radius: 50px;
+}
+
+/* gombiky */
+#leftExp,#rightExp{
+    border: 1px solid white;
+    background-color: #3D4849;
+    height: 4em;
+    width: 4em;
+    border-radius: 50px;
+    z-index: 2;
+    margin: 1vh;
+}
+
+#rightExp:active{
+    border: 1px solid #3bba9c;
+}
+
+#leftExp:active{
+    border: 1px solid #3bba9c;
+}
+/*--------------------------------------------*/
+
+/*--------------------FORMULAR----------------*/
+.form{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+label{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    color: white;
+    background-color: #3D4849;
+    font-family: corbert, sans-serif;
+}
+
+input{
+    background: none;
+    border-radius: 50px;
+    height: 4em;
+    width: 100%;
+    border: 1px solid #808080;
+    color: white;
+}
+
+input[type=text]{
+    box-sizing: border-box;
+    padding-left: 5%;
+    outline: none;
+}
+
+input[type=text]:focus{
+    border: 1px solid #3bba9c;
+    background-color: #3D4849;
+}
+
+#message{
+    height: 15em;
+    width: 100%;
+    background-color: #3D4849;
+    border-radius: 50px;
+    border: 1px solid #808080;
+    overflow: auto;
+    resize: none;
+    padding: 20px;
+}
+
+#message:focus{
+    outline: none;
+    border: 1px solid #3bba9c;
+    background-color: #3D4849;
+    color: white;
+}
+
+#labelMessage{
+    position: absolute;
+    top: 3%;
+    left: 15%;
+    color: white;
+    background-color: #3D4849;
+    font-family: corbert, sans-serif;
+}
+
+#submit{
+    border-radius: 50px;
+    color: white;
+    font-family: big john , sans-serif;
+    border: 1px solid #808080;
+    height: 4rem;
+    background: none;
+}
+
+#submit:active{
+    border: 1px solid #3bba9c;
+    color: #3bba9c;
+    font-size: 120%;
+    font-family: big john , sans-serif;
+}
+/*----------------------------------------------------*/
+
+
+
+/*-------------------Signature------------------------*/
+.signature{
+    width: 100%;
+}
+
+#fakeSignature{
+    width: 90%;
+    border-radius: 50px;
+    border: 1px solid #808080;
+}
+
+#contactText{
+    border-radius: 50px;
+    border: 1px solid #808080;
+    width: 90%;
+}
+/*---------------------------------------------------*/
+
+
+/*----------------BARS-------------------------------*/
+.bar{
+    width: 0.5rem;
+    height: 5.2em;
+    background-color: #808080;
+    position: relative;
+}
+
+.barLevel{
+    width: 100%;
+    background-color: #3bba9c;
+    position: absolute;
+    bottom: 0;
+}
+
+.barHorizontal{
+    width: 100%;
+    position: relative;
+    height: 0.5rem;
+    background-color: #808080;
+}
+
+.barHorizontalLevel{
+    height: 0.5rem;
+    background-color: #3bba9c;
+    position: absolute;
+    left: 0;
+}
+
+#schoolLeft, #schoolRight{
+    min-height: 15vh;
+}
+/*-----------------------------------------------------*/
+
+

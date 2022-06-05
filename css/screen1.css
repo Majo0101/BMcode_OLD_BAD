@@ -1,0 +1,126 @@
+@media only screen and (min-height: 1440px){
+    body, html {
+        font-size:1.6em;
+    }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 980px){
+    .textField{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1280px){
+    .textField{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    .textField{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .buttonSlider{
+        display: none;
+
+    }
+
+    .experience{
+        min-height: 80vh;
+    }
+}
+
+@media only screen and (max-width: 980px){
+
+    Html, body
+    {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    .photoMain{
+        position:static;
+        left: 0;
+        top: 0;
+        height: 40vh;
+        background-color: #3bba9c;
+        min-width: 100%;
+        z-index: 0;
+        /*display: flex;*/
+    }
+
+    .myName{
+        min-width: 100%;
+        height: auto;
+        background-color: #3D4849;
+        z-index: 0;
+        position: static;
+        border-radius: 0 0 0 0;
+        display: flex;
+    }
+
+    .myNameText{
+        font-size: 3em;
+    }
+
+    #buttonDown{
+        width: 30%;
+    }
+
+    .textMainArea{
+        position: static;
+        left: 0;
+        top: 0;
+        height: auto;
+        flex-direction: column;
+        background-color: black;
+        min-width: 100%;
+        z-index: 0;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        border-top: 0;
+    }
+
+    .infoBarMain{
+        position: static;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3D4849;
+        border-top: 0;
+        border-left: 0;
+    }
+
+    .home{
+        display: none;
+    }
+
+    .infoBarLogos{
+        height: auto;
+        border: 1px solid grey;
+        width: 16em;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
+
+
+
+

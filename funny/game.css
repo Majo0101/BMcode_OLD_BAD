@@ -1,0 +1,90 @@
+#gameWindow {
+    position: relative;
+    width: 70vh;
+    height: 70vh;
+    background-color: #3D4849;
+    z-index: 2;
+}
+
+#piggy {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10%;
+    height: 10%;
+    filter: invert(100%);
+}
+
+#coin{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10%;
+    height: 10%;
+    filter: invert(100%);
+}
+
+#counter{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1rem;
+    width: auto;
+}
+
+.sky{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.sky>img{
+    height: 100%;
+    width: 100%;
+}
+
+.ground{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.ground > img{
+    height: 100%;
+    width: 100%;
+}
+
+.score{
+    position: absolute;
+    top: 20%;
+    left: 2%
+}
+
+.play{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+/*base CSS*/
+.javascript{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #808080;
+    background-color: #3D4849;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1279px){
+    .javascript{
+        display: none;
+    }
+}

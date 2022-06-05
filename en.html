@@ -1,0 +1,842 @@
+<!doctype html>
+<html class="no-js" lang="sk-SK" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <title>Marian Bodnar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="css/base.css?version = 2.0">
+    <link rel="stylesheet" href="css/screen1.css?version = 2.0">
+    <link rel="stylesheet" href="gallery/gallery.css?version = 2.0">
+    <link rel="stylesheet" href="css/nav.css?version = 2.0">
+    <link rel="stylesheet" href="funny/game.css?version = 1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body onload="pepsi('EN'); firstJob(); firstLook();">
+<div class="loading"
+     style="background-color: #3D4849;
+     height: 100vh;
+     width: 100%;
+     z-index: 9999;
+     position: fixed;
+     display: flex;
+     justify-content: center;
+     align-items: center">
+    <img src="icons/load.gif" alt="Loading" style="height: 7vh; width: 7vh"></div>
+<div class="loadingGreen" style="position: fixed; width: 100%; height: 100vh; background-color: #3bba9c; z-index: 9998"></div>
+
+
+<div class="galleryPlate">
+    <button id="close"><img src="gallery/X.svg" alt="Close"></button>
+    <div class="photoArea">
+        <img src="gallery/1.jpg" id="invisible" alt="Invisible">
+        <button id="left"><img src="gallery/left.svg" alt="Left"></button>
+        <button id="right"><img src="gallery/right.svg" alt="Right"></button>
+    </div>
+</div>
+
+<!---->
+<div class="photoMain"></div>
+<!---->
+
+<div class="myName">
+    <div class="myNameText">&nbsp;MARIAN</div>
+    <div class="myNameText">&nbsp;BODNAR</div><br>
+</div>
+<!---->
+<div class="infoBarMain">
+    <div class="infoBarLogos">
+        <div class="infoBarLogoSpace"></div>
+        <div class="infoBarLogo">
+            <a class="linkTo" href="https://www.facebook.com/profile.php?id=100016839404002"><img class="logoInfo" src="icons/facebook.svg" alt="Facebook"></a>
+        </div>
+        <div class="infoBarLogoSpace"></div>
+        <div class="infoBarLogo">
+            <a class="linkTo" href="https://wa.me/qr/D6H654ZJHK4ZL1"><img class="logoInfo" src="icons/whatsapp.svg" alt="WhatsApp"></a>
+        </div>
+        <div class="infoBarLogoSpace"></div>
+        <div class="infoBarLogo">
+            <a class="linkTo" href="https://www.linkedin.com/in/majo1991"><img class="logoInfo" src="icons/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+        <div class="infoBarLogoSpace"></div>
+        <div class="infoBarLogo">
+            <a class="linkTo" href="https://github.com/Majo0101?tab=repositories"><img class="logoInfo" src="icons/github.svg" alt="GitHub" ></a>
+        </div>
+        <div class="infoBarLogoSpace"></div>
+    </div>
+</div>
+
+<nav class="myNav">
+    <a class="navbar-brand" href="en.html">
+        <img src="img/brand.png" width="auto" height=60 alt="Logo" href="#">
+    </a>
+    <div class="menu"><img src="img/exp.svg" width="auto" height="60" style="filter: invert(99%)" alt="Menu"></div>
+    <div class="buttonNavArea">
+        <div class="button" id="home" onclick="firstLook()">
+            <p>HOME</p>
+        </div>
+        <div class="button" id="experience">
+            <p>EXPERIENCE</p>
+        </div>
+        <div class="button" id="education">
+            <p>EDUCATION</p>
+        </div>
+        <div class="button" id="skills">
+            <p>SKILL</p>
+        </div>
+        <div class="button" id="gallery">
+            <p>GALLERY</p>
+        </div>
+        <div class="button" id="other">
+            <p>OTHER</p>
+        </div>
+        <a id="download" class="button" href="img/CV_HE.pdf" download="CV-EN">
+            <p>DOWNLOAD_CV</p>
+        </a>
+        <a class="button" style="text-decoration: none;" href="index.html">
+            <p>SK</p>
+        </a>
+    </div>
+</nav>
+
+<div class="textMainArea">
+    <div class="home"></div>
+
+    <div class="prolog">
+        <div class="rollText">
+            <p style="color: white; font-size: 2em;"><span id="title" class="slow"></span><strong>|</strong></p>
+        </div>
+        <div class="textField">
+            <div class="corBert">
+                <p>Hi, My name is Marian Bodnar and this is
+                    my CV. It will not be clear from work experience why I own this site.
+                    This is due to the fact that I am constantly learning and doing what I like.
+                </p>
+            </div><br>
+        </div>
+        <div class="prologButtons">
+            <button id="contactMe">CONTACT</button>
+            <button id="buttonDown"><span id="buttonBouncing">ABOUT ME</span></button>
+        </div><br>
+    </div>
+
+    <div class="aboutMe"><br><br>
+        <div class="titles" style="border-bottom: none">
+            <p>ABOUT ME</p>
+        </div>
+        <div class="textField">
+            <div class="bigJohn">
+                <p style="color: #3bba9c">MY STORY</p>
+            </div><br>
+        </div>
+        <div class="textField">
+            <div class="corBert">
+                <p>In 2021 I started studying FI PEVŠ because I wanted to move my hobby somewhere.
+                    I moved to Bratislava and my goal is to work as a programmer. I want to gain knowledge from school and practical experience in work at the same time. I see myself more in "back-end" or "embedded devices", but I haven't problem with "full-stack".
+                </p>
+            </div><br>
+            <div class="corBert">
+                <p>
+                    I wrote this page from scratch in the HTML5 standard. I've used some Boostrap features, but all the other lines of this code are mine.</p>
+            </div><br>
+        </div>
+        <div class="textField">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="row">
+                        <div class="col">
+                            <div class="bigJohn">
+                                <p style="color: #3bba9c">AGE:</p>
+                            </div>
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="corBert">
+                                <p>31</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="bigJohn">
+                                <p style="color: #3bba9c">ADDRESS:</p>
+                            </div>
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="corBert">
+                                <p>Bratislava V</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="row">
+                        <div class="col">
+                            <div class="bigJohn">
+                                <p style="color: #3bba9c">PHONE:</p>
+                            </div>
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="corBert">
+                                <p>+421 950 596 214</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="bigJohn">
+                                <p style="color: #3bba9c">EMAIL:</p>
+                            </div>
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="corBert">
+                                <p>bodnar.marian@bmcode.sk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+        </div>
+    </div>
+
+    <div class="experience" id="slider"><br><br>
+        <div class="titles">
+            <p>EXPERIENCE</p>
+        </div>
+
+        <div class="buttonSlider">
+            <button id="leftExp" onclick="jobChange(true)"><span class="buttonSliderMoveLeft"><img src="icons/left.png" alt="Left" style="height: 1.5em; margin-bottom: 4%;"></span></button>&nbsp;&nbsp;&nbsp;
+            <button id="rightExp" onclick="jobChange(false)"><span class="buttonSliderMoveRight"><img src="icons/right.png" alt="Right" style="height: 1.5em; margin-left: 6%; margin-bottom: 4%"></span></button>
+        </div>
+
+        <div class="textField" id="one">
+            <div class="bigJohn">
+                <p style="color: #3bba9c">RESUME</p>
+            </div>
+        </div><br>
+        <div id="job1" class="textField" style="display: none" >
+            <div class="row">
+                <div class="col-2">
+                    <div class="bigJohn">
+                        <p style="writing-mode: vertical-rl; color: #3bba9c">2011 - 2016</p>
+                    </div>
+                </div>
+                <div class="col-10" style="min-height: 15vh">
+                    <div class="corBert">
+                        <h5 style="font-size: 150%; font-weight: bolder">Freelance business</h5>
+                        <p style="font-weight: bolder">Revúca</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-left: 2%">
+                <div class="corBert">
+                    <h6 style="font-weight: bolder">Electrician engineer</h6><br>
+                </div>
+            </div><br>
+            <div class="row" style="margin-left: 2%">
+                <div class="corBert" style="border-left: 1px solid white">
+                    Residential and domestic electrical installations. Cabling according to drawing
+                    documentation or without it. Manufacture of residential and domestic
+                    switchboards with or without documentation. Repairs of various small faults
+                    and diagnostics. CCTV systems and LAN home network installation and
+                    startup. PC repair, PC removal, Win installation, Linux, etc.
+                </div>
+            </div>
+        </div>
+        <div id="job2" class="textField" style="display: none">
+            <div class="row">
+                <div class="col-2">
+                    <div class="bigJohn">
+                        <p style="writing-mode: vertical-rl; color: #3bba9c">2016 - 2021</p>
+                    </div>
+                </div>
+                <div class="col-10" style="min-height: 15vh">
+                    <div class="corBert">
+                        <h5 style="font-size: 150%; font-weight: bolder">ElektroBaláž</h5>
+                        <p style="font-weight: bolder">Revúca</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-left: 2%">
+                <div class="corBert">
+                    <h6 style="font-weight: bolder">Service Technician</h6><br>
+                </div>
+            </div><br>
+            <div class="row" style="margin-left: 2%">
+                <div class="corBert" style="border-left: 1px solid white">
+                    Biogas plant service (Agrikomp technology). Construction of technological
+                    switchboards, custom control, replacement of power components (Max 1000V)
+                    and fault diagnostics (measurements, etc.). Knowledge of PLC Beckhoff,
+                    Siemens, Wago. Repairs of various technologies like elevators, cranes,
+                    cogeneration units, boilers, etc. Transhipment of HV / LV lines and kiosks.
+                    Revisions and inspections. Reading drawings and diagrams of course.
+                    Management of employees. A complete automatization solutions.
+                </div>
+            </div>
+        </div>
+        <div id="job3" class="textField" style="display: none">
+            <div class="row">
+                <div class="col-2">
+                    <div class="bigJohn">
+                        <p style="writing-mode: vertical-rl; color: #3bba9c">2022 - NOW</p>
+                    </div>
+                </div>
+                <div class="col-10" style="min-height: 15vh">
+                    <div class="corBert">
+                        <h5 style="font-size: 150%; font-weight: bolder">Your Company</h5>
+                        <p style="font-weight: bolder">Anywhere</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-left: 2%">
+                <div class="corBert">
+                    <h6 style="font-weight: bolder">Frontend || Backend && Development</h6><br>
+                </div>
+            </div><br>
+            <div class="row" style="margin-left: 2%">
+                <div class="corBert" style="border-left: 1px solid white">
+                    <div class="textField" style="justify-content: center; text-align: center;">
+                        <div class="bigJohn"><br>
+                            <h1>FREE PLACE</h1>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="education"><br><br>
+        <div class="titles">
+            <p>EDUCATION</p>
+        </div>
+        <div class="textField">
+            <div class="bigJohn">
+                <p style="color: #3bba9c">STUDIED AT</p>
+            </div>
+        </div><br><br>
+        <div class="textField">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="bigJohn">
+                                <p style="writing-mode: vertical-rl; color: #3bba9c">2021 - NOW</p>
+                            </div>
+                        </div>
+                        <div class="col-10" id="schoolLeft" >
+                            <div class="corBert">
+                                <h5 style="font-size: 150%; font-weight: bolder">Paneurópska vysoká škola - Faculty of Informatics</h5>
+                                <p style="font-weight: bolder">Bratislava</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-left: 2%">
+                        <div class="corBert">
+                            <h6 style="font-weight: bolder">Applied informatics for industry 4.0</h6><br>
+                        </div>
+                    </div><br>
+                    <div class="row" style="margin-left: 2%">
+                        <div class="corBert" style="border-left: 1px solid white">
+                            <p>Comprehensive knowledge of data mining methods and their subsequent use in the environment
+                                large data warehouses (Big Data) generated in the industry. Introduction to tools
+                                Business Intelligence.
+                            </p>
+                        </div>
+                    </div><br><br>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-2 ">
+                            <div class="bigJohn">
+                                <p style="writing-mode: vertical-rl; color: #3bba9c">2006 - 2010</p>
+                            </div>
+                        </div>
+                        <div class="col-10 " id="schoolRight" >
+                            <div class="corBert">
+                                <h5 style="font-size: 150%; font-weight: bolder">Secondary school</h5>
+                                <p style="font-weight: bolder">Tisovec</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-left: 2%">
+                        <div class="corBert">
+                            <h6 style="font-weight: bolder">2675 - Electrical engineering</h6><br>
+                        </div>
+                    </div><br>
+                    <div class="row" style="margin-left: 2%">
+                        <div class="corBert" style="border-left: 1px solid white">
+                            <p>Broad professional profile with the necessary general education, sufficient adaptability, logical thinking and
+                                the ability to apply the acquired knowledge in the problem-solving process individually or in a team.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+    </div>
+
+    <div class="skills"><br><br>
+        <div class="titles">
+            <p>CODING SKILLS</p>
+        </div>
+        <div class="textField">
+            <div class="bigJohn">
+                <p style="color: #3bba9c">DEVELOPMENT</p>
+            </div>
+        </div><br><br>
+        <div class="textField">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="bar">
+                                <div class="barLevel" style="height: 3.5em;"></div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="corBert" style="font-size: 150%; font-weight: bolder">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                            </div>
+                        </div>
+                        <div class="corBert" style="width: 80%">
+                            <p>This site is my level now.</p>
+                        </div>
+                    </div><br>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="bar">
+                                <div class="barLevel" style="height: 4em;"></div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="corBert" style="font-size: 150%; font-weight: bolder">
+                                <p>C</p>
+                                <p>C++</p>
+                            </div>
+                        </div>
+                        <div class="corBert" style="width: 80%">
+                            <p>Ability to design and manufacture functional embedded devices.</p>
+                        </div>
+                    </div><br>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="bar">
+                                <div class="barLevel" style="height: 2.5em;"></div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="corBert" style="font-size: 150%; font-weight: bolder">
+                                <p>JQ</p>
+                                <p>JS</p>
+                            </div>
+                        </div>
+                        <div class="corBert" style="width: 80%">
+                            <p>Extending the functionality of websites.</p>
+                        </div>
+                    </div><br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="bar">
+                                <div class="barLevel" style="height: 2em;"></div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="corBert" style="font-size: 150%; font-weight: bolder">
+                                <p>Python</p>
+                                <p>Django</p>
+                            </div>
+                        </div>
+                        <div class="corBert" style="width: 80%">
+                            <p>I am currently learning the Django framework.</p>
+                        </div>
+                    </div><br>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="bar">
+                                <div class="barLevel" style="height: 4em;"></div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="corBert" style="font-size: 150%; font-weight: bolder">
+                                <p>Siemens</p>
+                                <p>LOGO</p>
+                            </div>
+                        </div>
+                        <div class="corBert" style="width: 80%">
+                            <p>Production of custom controls together with the electrical part.</p>
+                        </div>
+                    </div><br>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="bar">
+                                <div class="barLevel" style="height: 2em;"></div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="corBert" style="font-size: 150%; font-weight: bolder">
+                                <p>MYSQL</p>
+                                <p>JAVA</p>
+                            </div>
+                        </div>
+                        <div class="corBert" style="width: 80%">
+                            <p>Knowledge will be supplemented in the 3rd and 4th semester.
+                            </p>
+                        </div>
+                    </div><br>
+                </div>
+            </div>
+        </div><br><br>
+    </div>
+
+    <div class="gallery"><br><br>
+        <div class="titles">
+            <p>GALLERY</p>
+        </div>
+        <div class="textField">
+            <div class="bigJohn">
+                <p style="color: #3bba9c">FOTO</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="textField">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="photoFrame" id="photoOne" onclick="$number = 0">
+                        <div class="clone"><img src="gallery/expand.svg" alt="Expand">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="bigJohn"
+                         style="font-size: 90%; color: #3bba9c; font-weight: lighter; text-align: center">IMAGE
+                    </div>
+                    <div class="bigJohn" style="font-size: 110%; font-weight: lighter; text-align: center">Embedded
+                        projects
+                    </div>
+                    <br><br>
+                </div>
+                <div class="col-md-6">
+                    <div class="photoFrame" id="photoTwo" onclick="$number = 2">
+                        <div class="clone"><img src="gallery/expand.svg" alt="Expand">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="bigJohn"
+                         style="font-size: 90%; color: #3bba9c; font-weight: lighter; text-align: center">IMAGE
+                    </div>
+                    <div class="bigJohn" style="font-size: 110%; font-weight: lighter; text-align: center">OLD WORK
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="photoFrame" id="photoThree" onclick="$number = 4">
+                        <div class="clone"><img src="gallery/expand.svg" alt="Expand">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="bigJohn"
+                         style="font-size: 90%; color: #3bba9c; font-weight: lighter; text-align: center">IMAGE
+                    </div>
+                    <div class="bigJohn" style="font-size: 110%; font-weight: lighter; text-align: center">CODING</div>
+                    <br><br>
+                </div>
+                <div class="col-md-6">
+                    <div class="photoFrame" id="photoFour" onclick="$number = 6">
+                        <div class="clone"><img src="gallery/expand.svg" alt="Expand">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="bigJohn"
+                         style="font-size: 90%; color: #3bba9c; font-weight: lighter; text-align: center">IMAGE
+                    </div>
+                    <div class="bigJohn" style="font-size: 110%; font-weight: lighter; text-align: center">FAVORITE
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="javascript"><br><br>
+        <div class="titles">
+            <p>JAVASCRIPT</p>
+        </div>
+        <div class="textField">
+            <div class="bigJohn">
+                <p style="color: #3bba9c">Let's play</p>
+            </div>
+        </div>
+        <br>
+        <div class="textField">
+            <div class="game" id="gameWindow">
+                <div class="sky"><img src="funny/cloud.svg" alt="cloud"></div>
+                <div class="ground"><img src="funny/ground.svg" alt="ground"></div>
+                <div class="play" style="font-family: Corbert, sans-serif;font-weight: bolder; font-size: 170%; text-align: center; color: white;">Click for play</div>
+                <div id="piggy"><img src="funny/piggy.svg" width="100%" id="pig" style="transform: scaleX(1);" alt="piggy"></div>
+                <div id="coin"><img src="funny/coin.svg" width="70%" alt="coin"></div>
+                <div class="score"><p style="color: white; font-family: Corbert, sans-serif;font-size: 120%">Score:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="counter"></span></p></div>
+            </div><br>
+            <div class="corBert">
+                <p>Grab coins with the keyboard > < </p>
+            </div>
+        </div><br><br>
+    </div>
+
+
+    <div class="otherSkill"><br><br>
+        <div class="titles">
+            <p>OTHER</p>
+        </div>
+        <div class="textField">
+            <div class="bigJohn">
+                <p style="color: #3bba9c">KNOWLEDGE</p>
+            </div>
+        </div><br>
+        <div class="textField">
+            <div class="row">
+                <div class="corBert">
+                    <p style="font-size: 150%; font-weight: bolder;">Languages</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="bigJohn">
+                                <p style="writing-mode: vertical-lr; color: #3bba9c">ENGLISH</p>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="corBert">
+                                <p style="font-weight: bolder">B1 (Intermediate)</p>
+                            </div>
+                            <div class="barHorizontal">
+                                <div class="barHorizontalLevel" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div><br>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="bigJohn">
+                                <p style="writing-mode: vertical-lr; color: #3bba9c">SLOVAK</p>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="corBert">
+                                <p style="font-weight: bolder">NATIVE</p>
+                            </div>
+                            <div class="barHorizontal">
+                                <div class="barHorizontalLevel" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="corBert">
+                    <p style="font-size: 150%; font-weight: bolder;">Certificates</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="row">
+                                <div class="bigJohn">
+                                    <p style="writing-mode: vertical-lr; color: #3bba9c">2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="corBert">
+                                <p style="font-weight: bolder">§23 Electrician certificate</p>
+                            </div>
+                            <div class="corBert">
+                                <p style="color: #3bba9c">Juraj Komačka Rozkvet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="corBert" style="margin-left: 8%; border-left: 1px solid white;">
+                            <p>Electrician managment / Max 1000V without explosion</p>
+                        </div>
+                    </div><br>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="row">
+                                <div class="bigJohn">
+                                    <p style="writing-mode: vertical-lr; color: #3bba9c">2010</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="corBert">
+                                <p style="font-weight: bolder">Driver license</p>
+                            </div>
+                            <div class="corBert">
+                                <p style="color: #3bba9c">400 000km+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="corBert" style="margin-left: 8%; border-left: 1px solid white;">
+                            <p style="font-size: 150%">
+                                <span style="background-color: #3bba9c; border-radius: 50%;">&nbsp;A&nbsp;</span>&nbsp;
+                                <span style="background-color: #3bba9c; border-radius: 50%;">&nbsp;B&nbsp;</span>&nbsp;
+                                <span style="background-color: #3bba9c; border-radius: 50%;">&nbsp;C&nbsp;</span>&nbsp;
+                                <span style="background-color: #3bba9c; border-radius: 50%;">&nbsp;T&nbsp;</span>&nbsp;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="row">
+                <div class="corBert">
+                    <p style="font-size: 150%; font-weight: bolder;">Hobbies</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="corBert">
+                        <p style="color: #3bba9c; writing-mode: vertical-rl;">Free time</p>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="corBert">
+                        <p>In my free time, I focus mainly on school and exercises. Before school, I was focused more on the production of IoT hardware and software projects.
+                            I also like climbing and adrenaline sports. Travel is a matter of course.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+    </div>
+
+    <div class="contact"><br><br>
+        <div class="titles">
+            <p>CONTACT</p>
+        </div>
+        <div class="textField">
+            <div class="bigJohn">
+                <p style="color: #3bba9c">Let's talk</p>
+            </div>
+        </div><br>
+        <div class="textField">
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="contact-form" name="contact-form" method="post" >
+                        <div class="row">
+                            <div class="form">
+                                <label for="name">&nbsp;Full name:&nbsp;<span style="color: #3bba9c; font-family: big john, sans-serif">_&nbsp;</span></label><br>
+                                <input type="text" id="name" name="name" value=""><br>
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="form">
+                                <label for="email">&nbsp;Email:&nbsp;<span style="color: #3bba9c; font-family: big john, sans-serif">_&nbsp;</span></label><br>
+                                <input type="text" id="email" name="email" value=""><br>
+                            </div><br>
+                        </div><br>
+                        <div class="row">
+                            <div class="form">
+                                <label id="labelMessage" for="message">&nbsp;Message:&nbsp;<span style="color: #3bba9c; font-family: big john, sans-serif">_&nbsp;</span></label><br>
+                                <textarea id="message" name="message"  maxlength="6000" placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form">
+                                <label for="captcha">&nbsp;<span id="captchaLabel" style="color: white; font-family: Corbert, sans-serif"></span>&nbsp;<span style="color: #3bba9c; font-family: big john, sans-serif">_&nbsp;</span></label><br>
+                                <input type="text" id="captcha" name="captcha" value=""><br>
+                            </div>
+                        </div><br><br><br>
+                    </form>
+                    <div class="row">
+                        <button id="submit" type="submit" value="submit" onclick="alertMess('EN')">SEND</button>
+                    </div>
+                </div>
+                <div class="col-md-6"><br>
+                    <div class="row">
+                        <div class="textField" id="contactText"><br>
+                            <div class="bigJohn">
+                                <p style="font-size: 150%">Marian Bodnar</p>
+                            </div>
+                            <div class="bigJohn">
+                                <p style="color: #3bba9c">BMCODE</p>
+                            </div><br>
+                            <div class="corBert">
+                                <p><span style="color: #3bba9c">Age:</span>&nbsp;&nbsp;31</p>
+                                <p><span style="color: #3bba9c">Resident:</span>&nbsp;&nbsp;Slovakia</p>
+                                <p><span style="color: #3bba9c">Freelance:</span>&nbsp;&nbsp;yes</p>
+                                <p><span style="color: #3bba9c">Address:</span>&nbsp;&nbsp;Bratislava V</p>
+                                <p><span style="color: #3bba9c">Phone:</span>&nbsp;&nbsp;+421 950 596 214</p>
+                                <p style="word-break: break-all"><span style="color: #3bba9c">Email:</span>&nbsp;&nbsp;bodnar.marian@bmcode.sk</p>
+                            </div><br>
+                            <div class="textField" style="justify-content: center; width: 100%">
+                                <div class="signature">
+                                    <img src="img/brandSignature.png" alt="signature" id="fakeSignature">
+                                </div>
+                            </div><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br>
+    </div>
+
+    <div class="copyRight">
+        <div class="textField" style="text-align: center; justify-content: center"><br>
+            <div class="corBert">
+                <p style="font-size: 130%; color: #808080">© 2022 Copyright: Marian Bodnar v1.0</p>
+            </div><br>
+        </div>
+    </div>
+</div>
+
+<script src="js/loader.js?version = 2.0"></script>
+<script src="js/nav.js?version = 2.0"></script>
+<script src="gallery/tech.js?version = 2.0"></script>
+<script src="js/mailer.js?version = 2.0"></script>
+<script src="js/divContent.js?version = 2.0"></script>
+<script src="funny/game.js?version = 1.0"></script>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
